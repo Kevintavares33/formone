@@ -1,17 +1,24 @@
-
+import  './Myform.css';
 
 const MyForm = () => {
     return (
-    <form>
+    <form className="box-form">
          <label>
-               Nome:
-               <input type="text" name="name" />
+         <h1 className='titulo'>Consulte Seu Processo</h1>
+               <span className='numero'>N° Processo</span>
                <br></br>
-               Cidade:
-               <input type="text" name="name" />
+               <input type="number" name="numero processo" placeholder="Numero" />
+               <br></br>
+               <span>Nome da Parte</span>
+               <br></br>
+               <input type="text" name="name" placeholder=" Nome" />
+               <br></br>
+               <span>CPNJ</span>
+               <br></br>
+               <input type="number" name="cnpj" placeholder="xxx-xxx-xxx-xx" />
         </label>
         <br />
-               <input type="submit" value="Enviar" />
+              <button className="btn" type='submit' value={"consultar"}>consultar</button>
     </form>
         
 )};
